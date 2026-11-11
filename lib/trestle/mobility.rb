@@ -1,4 +1,5 @@
 require "emoji_flag"
+require "mobility"
 
 require "trestle"
 require "trestle/mobility/version"

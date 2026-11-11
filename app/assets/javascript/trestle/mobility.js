@@ -87,13 +87,15 @@ Trestle.init(function(e, root) {
   Mobility.prototype.initEvents = function () {
     var self = this;
 
-    this.$element.find('.mobility__languages .dropdown-item').on('click', function () {
+    this.$element.find('.mobility__languages .dropdown-item').on('click', function (e) {
+      e.preventDefault();
       var $item = $(this);
       self.activeLocale = $item.data('locale');
       self.chooseLanguage($item.text());
     });
 
     this.$element.find('.mobility__deepl-languages .dropdown-item').on('click', function (e) {
+      e.preventDefault();
       var $item = $(this);
 
       if ($item.hasClass('disabled')) {
