@@ -8,3 +8,7 @@
 /tmp/
 
 Gemfile.lock
+
+/test/dummy/log/
+/test/dummy/tmp/
+/test/dummy/public/assets/

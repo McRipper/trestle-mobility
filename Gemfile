@@ -1,4 +1,9 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-# Specify your gem's dependencies in trestle-mobility.gemspec
 gemspec
+
+group :test do
+  gem 'rails', '~> 8.1.0'
+  gem ENV.fetch('ASSET_PIPELINE', 'sprockets-rails')
+  gem 'minitest', '~> 5.0'
+end
